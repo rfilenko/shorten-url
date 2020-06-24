@@ -1,13 +1,15 @@
 import React from 'react';
+import HeroSection from './components/HeroSection';
 import './styles/app.css';
 
 function App() {
   return (
-    <div className="App">
-      <p className="my-4 text-xl font-bold text-center text-blue-500">
+    <>
+      <p className="p-6 my-4 font-bold text-center text-teal-400 bg-gray-100">
         Url shortner with Tailwind css
       </p>
-    </div>
+      <HeroSection />
+    </>
   );
 }
 

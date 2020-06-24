@@ -9,6 +9,7 @@ module.exports = {
       sm: '640px',
       md: '768px',
       lg: '1024px',
+      dt: '1110px',
       xl: '1280px',
     },
     colors: {
@@ -22,7 +23,7 @@ module.exports = {
         100: '#f7fafc',
         200: '#edf2f7',
         300: '#e2e8f0',
-        400: '#cbd5e0',
+        400: 'hsl(0, 0%, 75%)',
         500: '#a0aec0',
         600: '#718096',
         700: '#4a5568',
@@ -34,7 +35,7 @@ module.exports = {
         200: '#fed7d7',
         300: '#feb2b2',
         400: '#fc8181',
-        500: '#f56565',
+        500: 'hsl(0, 87%, 67%)',
         600: '#e53e3e',
         700: '#c53030',
         800: '#9b2c2c',
@@ -77,7 +78,7 @@ module.exports = {
         100: '#e6fffa',
         200: '#b2f5ea',
         300: '#81e6d9',
-        400: '#4fd1c5',
+        400: 'hsl(180, 66%, 49%)',
         500: '#38b2ac',
         600: '#319795',
         700: '#2c7a7b',
@@ -110,10 +111,10 @@ module.exports = {
         100: '#faf5ff',
         200: '#e9d8fd',
         300: '#d6bcfa',
-        400: '#b794f4',
+        400: 'hsl(257, 7%, 63%)',
         500: '#9f7aea',
-        600: '#805ad5',
-        700: '#6b46c1',
+        600: 'hsl(255, 11%, 22%)',
+        700: 'hsl(257, 27%, 26%)',
         800: '#553c9a',
         900: '#44337a',
       },
@@ -150,8 +151,8 @@ module.exports = {
       '56': '14rem',
       '64': '16rem',
     },
-    backgroundColor: theme => theme('colors'),
-    backgroundOpacity: theme => theme('opacity'),
+    backgroundColor: (theme) => theme('colors'),
+    backgroundOpacity: (theme) => theme('opacity'),
     backgroundPosition: {
       bottom: 'bottom',
       center: 'center',
@@ -168,11 +169,11 @@ module.exports = {
       cover: 'cover',
       contain: 'contain',
     },
-    borderColor: theme => ({
+    borderColor: (theme) => ({
       ...theme('colors'),
       default: theme('colors.gray.300', 'currentColor'),
     }),
-    borderOpacity: theme => theme('opacity'),
+    borderOpacity: (theme) => theme('opacity'),
     borderRadius: {
       none: '0',
       sm: '0.125rem',
@@ -191,10 +192,14 @@ module.exports = {
     boxShadow: {
       xs: '0 0 0 1px rgba(0, 0, 0, 0.05)',
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-      default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-      md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-      lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-      xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+      default:
+        '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+      md:
+        '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+      lg:
+        '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+      xl:
+        '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
@@ -210,9 +215,9 @@ module.exports = {
       move: 'move',
       'not-allowed': 'not-allowed',
     },
-    divideColor: theme => theme('borderColor'),
-    divideOpacity: theme => theme('borderOpacity'),
-    divideWidth: theme => theme('borderWidth'),
+    divideColor: (theme) => theme('borderColor'),
+    divideOpacity: (theme) => theme('borderOpacity'),
+    divideWidth: (theme) => theme('borderWidth'),
     fill: {
       current: 'currentColor',
     },
@@ -247,7 +252,14 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-      mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+      mono: [
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        '"Liberation Mono"',
+        '"Courier New"',
+        'monospace',
+      ],
     },
     fontSize: {
       xs: '0.75rem',
@@ -272,7 +284,7 @@ module.exports = {
       extrabold: '800',
       black: '900',
     },
-    height: theme => ({
+    height: (theme) => ({
       auto: 'auto',
       ...theme('spacing'),
       full: '100%',
@@ -379,9 +391,9 @@ module.exports = {
       '11': '11',
       '12': '12',
     },
-    padding: theme => theme('spacing'),
-    placeholderColor: theme => theme('colors'),
-    placeholderOpacity: theme => theme('opacity'),
+    padding: (theme) => theme('spacing'),
+    placeholderColor: (theme) => theme('colors'),
+    placeholderOpacity: (theme) => theme('opacity'),
     space: (theme, { negative }) => ({
       ...theme('spacing'),
       ...negative(theme('spacing')),
@@ -394,9 +406,9 @@ module.exports = {
       '1': '1',
       '2': '2',
     },
-    textColor: theme => theme('colors'),
-    textOpacity: theme => theme('opacity'),
-    width: theme => ({
+    textColor: (theme) => theme('colors'),
+    textOpacity: (theme) => theme('opacity'),
+    width: (theme) => ({
       auto: 'auto',
       ...theme('spacing'),
       '1/2': '50%',
@@ -437,7 +449,7 @@ module.exports = {
       '40': '40',
       '50': '50',
     },
-    gap: theme => theme('spacing'),
+    gap: (theme) => theme('spacing'),
     gridTemplateColumns: {
       none: 'none',
       '1': 'repeat(1, minmax(0, 1fr))',
@@ -590,7 +602,8 @@ module.exports = {
     transitionProperty: {
       none: 'none',
       all: 'all',
-      default: 'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform',
+      default:
+        'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform',
       colors: 'background-color, border-color, color, fill, stroke',
       opacity: 'opacity',
       shadow: 'box-shadow',
@@ -724,4 +737,4 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [],
-}
+};
