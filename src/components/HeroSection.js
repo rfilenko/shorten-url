@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <>
       <section className="hero-section">
-        <div className="container p-4 lg:p-40 max-w-screen-dt">
+        <div className="container p-8 lg:p-40 max-w-screen-dt">
           <div className="w-full lg:w-6/12 ">
             <h1 className="max-w-lg mb-2 text-5xl font-bold leading-tight">
               More than just shorter links

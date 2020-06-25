@@ -366,7 +366,12 @@ module.exports = {
       right: 'right',
       'right-bottom': 'right bottom',
       'right-top': 'right top',
-      top: 'top',
+      top: {
+        '0': '0',
+        auto: 'auto',
+        '-8': '-2rem',
+        '1/2': '50%',
+      },
     },
     opacity: {
       '0': '0',

@@ -7744,8 +7744,11 @@ video {
   object-position: right top;
 }
 
-.object-top{
-  object-position: top;
+.object-top object-position{
+  0: 0;
+  auto: auto;
+  -8: -2rem;
+  1/2: 50%;
 }
 
 .opacity-0{
@@ -14578,6 +14581,41 @@ body {
 /* statistics section */
 
 .statistics-section {
+}
+
+.card > div {
+  top: -2rem;
+}
+
+@media screen and (min-width: 64em) {
+  .cards-wrap {
+    grid-template-rows: repeat(4, 3rem);
+  }
+
+  .card:nth-child(1) {
+    grid-row: 1 / span 4;
+  }
+
+  .card:nth-child(2) {
+    grid-row: 2 / span 5;
+  }
+
+  .card:nth-child(3) {
+    grid-row: 3 / span 6;
+  }
+
+  /* decorative lines */
+
+  .card:nth-child(2):before,
+  .card:nth-child(3):before {
+    content: '';
+    width: 1.5rem;
+    height: 0.25rem;
+    background: hsl(180, 66%, 49%);
+    position: absolute;
+    top: 30%;
+    left: -1.5rem;
+  }
 }
 
 @media (min-width: 640px){
@@ -21711,8 +21749,11 @@ body {
     object-position: right top;
   }
 
-  .sm\:object-top{
-    object-position: top;
+  .sm\:object-top object-position{
+    0: 0;
+    auto: auto;
+    -8: -2rem;
+    1/2: 50%;
   }
 
   .sm\:opacity-0{
@@ -35639,8 +35680,11 @@ body {
     object-position: right top;
   }
 
-  .md\:object-top{
-    object-position: top;
+  .md\:object-top object-position{
+    0: 0;
+    auto: auto;
+    -8: -2rem;
+    1/2: 50%;
   }
 
   .md\:opacity-0{
@@ -49567,8 +49611,11 @@ body {
     object-position: right top;
   }
 
-  .lg\:object-top{
-    object-position: top;
+  .lg\:object-top object-position{
+    0: 0;
+    auto: auto;
+    -8: -2rem;
+    1/2: 50%;
   }
 
   .lg\:opacity-0{
@@ -63495,8 +63542,11 @@ body {
     object-position: right top;
   }
 
-  .dt\:object-top{
-    object-position: top;
+  .dt\:object-top object-position{
+    0: 0;
+    auto: auto;
+    -8: -2rem;
+    1/2: 50%;
   }
 
   .dt\:opacity-0{
@@ -77423,8 +77473,11 @@ body {
     object-position: right top;
   }
 
-  .xl\:object-top{
-    object-position: top;
+  .xl\:object-top object-position{
+    0: 0;
+    auto: auto;
+    -8: -2rem;
+    1/2: 50%;
   }
 
   .xl\:opacity-0{
