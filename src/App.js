@@ -2,6 +2,7 @@ import React from 'react';
 import FormInput from './components/FormInput';
 import HeroSection from './components/HeroSection';
 import StatisticsSection from './components/StatisticsSection';
+import BoostSection from './components/BoostSection';
 
 import './styles/app.css';
 
@@ -23,6 +24,7 @@ function App() {
       <HeroSection />
       <FormInput />
       <StatisticsSection />
+      <BoostSection />
     </>
   );
 }

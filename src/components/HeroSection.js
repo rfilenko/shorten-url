@@ -16,7 +16,7 @@ const HeroSection = () => {
             </p>
             <a
               href="/"
-              className="px-10 py-3 text-sm text-white bg-teal-400 rounded-full hover:bg-teal-800"
+              className="px-10 py-3 text-sm text-white transition duration-300 ease-in-out bg-teal-400 rounded-full hover:bg-teal-600"
             >
               Get Started
             </a>

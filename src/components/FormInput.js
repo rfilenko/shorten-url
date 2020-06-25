@@ -5,7 +5,7 @@ const FormInput = () => {
     <>
       <section className="relative -mb-24 form-input">
         <div className="container p-4 mx-auto max-w-screen-dt">
-          <form className="w-full px-10 py-12 text-sm rounded-lg lg:flex lg:justify-between lg:items-center">
+          <form className="w-full px-10 py-12 text-sm bg-purple-600 bg-center bg-cover rounded-lg lg:flex lg:justify-between lg:items-center">
             <input
               type="text"
               placeholder="Shorten a link here"

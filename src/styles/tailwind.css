@@ -20,10 +20,8 @@ body {
 }
 
 .form-input form {
-  background-color: hsl(255, 11%, 22%);
   background-image: url(../images/bg-shorten-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 /* 
 48em - 768px
@@ -68,5 +66,17 @@ body {
     position: absolute;
     top: 30%;
     left: -1.5rem;
+  }
+}
+
+/* boost-section */
+.boost-section {
+  background-image: url(../images/bg-boost-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 48em) {
+  .boost-section {
+    background-image: url(../images/bg-boost-desktop.svg);
   }
 }
