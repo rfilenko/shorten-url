@@ -4,14 +4,6 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <>
-      <div className="max-w-screen-sm p-8 mx-auto mb-8 bg-gray-200 rounded">
-        <p className="text-teal-400">cyan</p>
-        <p className="text-purple-700">violet</p>
-        <p className="text-red-500">red</p>
-        <p className="text-gray-400">Gray</p>
-        <p className="text-purple-400">Grayish Violet</p>
-        <p className="text-purple-600">Very Dark Blue</p>
-      </div>
       <section className="hero-section">
         <div className="container p-4 lg:p-40 max-w-screen-dt">
           <div className="w-full lg:w-6/12 ">

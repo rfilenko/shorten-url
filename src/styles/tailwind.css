@@ -18,3 +18,25 @@ body {
   background-size: 45%;
   background-position: 115% center;
 }
+
+.form-input form {
+  background-color: hsl(255, 11%, 22%);
+  background-image: url(../images/bg-shorten-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 
+48em - 768px
+64em - 1024px
+ */
+/* //tablet */
+@media screen and (min-width: 48em) {
+  .form-input form {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-position: center;
+  }
+}
+
+/* statistics section */
+.statistics-section {
+}
