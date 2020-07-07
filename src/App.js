@@ -1,6 +1,8 @@
 import React from 'react';
-import FormInput from './components/FormInput';
+
+import Header from './components/Header';
 import HeroSection from './components/HeroSection';
+import FormInput from './components/FormInput';
 import StatisticsSection from './components/StatisticsSection';
 import BoostSection from './components/BoostSection';
 import Footer from './components/Footer';
@@ -10,7 +12,7 @@ import './styles/app.css';
 function App() {
   return (
     <>
-      <p className="p-6 my-4 font-bold text-center text-teal-400 bg-gray-100">
+      {/* <p className="p-6 my-4 font-bold text-center text-teal-400 bg-gray-100">
         Url shortner with Tailwind css
       </p>
       <div className="max-w-screen-sm p-8 mx-auto mb-8 bg-gray-200 rounded">
@@ -20,8 +22,9 @@ function App() {
         <p className="text-gray-400">Gray</p>
         <p className="text-purple-400">Grayish Violet</p>
         <p className="text-purple-600">Very Dark Blue</p>
-      </div>
+      </div> */}
 
+      <Header />
       <HeroSection />
       <FormInput />
       <StatisticsSection />

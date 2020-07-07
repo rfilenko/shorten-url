@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer bg-purple-600 text-white">
-        <div className="container max-w-screen-xl mx-auto pt-8 pb-8 lg:pt-20 lg:pb-20 flex flex-col md:flex-row">
+        <div className="container max-w-screen-dt mx-auto pt-8 pb-8 lg:pt-20 lg:pb-20 flex flex-col md:flex-row">
           <div className="flex justify-evenly md:justify-between items-center justify-center lg:w-3/12 mb-6 md:mb-0 items-baseline">
             <a href="/" className="logo">
               <svg
@@ -33,7 +33,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="text-center md:text-left mb-4 md:mb-0">
-              <h4 className="mb-4 text-base"> Resources</h4>
+              <h4 className="mb-4 text-base">Resources</h4>
               <ul>
                 <li className="footer-link">
                   <a href="#">Blog</a>

@@ -6,7 +6,7 @@ const StatisticsSection = () => {
   return (
     <>
       <section className="px-8 bg-gray-200 statistics-section">
-        <div className="container max-w-screen-xl py-40 mx-auto">
+        <div className="container max-w-screen-dt py-40 mx-auto">
           <div className="flex flex-col items-center mb-8 intro">
             <h2 className="mb-2 text-3xl font-bold title">
               Advanced Statistics

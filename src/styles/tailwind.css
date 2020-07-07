@@ -4,8 +4,33 @@
 
 @tailwind components;
 
+.btn {
+  @apply px-10 py-3 text-sm shadow text-white transition duration-300 ease-in-out bg-teal-400 rounded-full;
+}
+.btn:hover {
+  @apply bg-teal-600 text-white shadow-md;
+}
+.btn:focus {
+  @apply bg-teal-600 text-white shadow-md;
+  outline-style: dashed;
+  outline-color: hsl(180, 66%, 49%);
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+.nav-link {
+  @apply text-purple-400 text-sm mr-6 transition duration-300 ease-in-out;
+}
+.nav-link:hover {
+  @apply text-purple-600;
+}
+.nav-link:focus {
+  outline-style: dashed;
+  outline-color: hsl(255, 11%, 22%);
+  outline-width: 2px;
+  outline-offset: 2px;
+}
 .footer-link {
-  @apply text-purple-400 text-sm mb-2 transition duration-300 ease-in-out;
+  @apply text-purple-400 text-base font-bold mb-2 transition duration-300 ease-in-out;
 }
 .footer-link:hover {
   @apply text-purple-200;
@@ -95,4 +120,67 @@ body {
   .boost-section {
     background-image: url(../images/bg-boost-desktop.svg);
   }
+}
+
+nav.opened {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5rem;
+  background-color: hsl(230, 29%, 20%);
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  margin: 0;
+  padding: 1.75rem;
+  border-radius: 1rem;
+}
+nav.opened ul {
+  position: relative;
+  margin-bottom: 2rem;
+}
+nav.opened ul,
+nav.opened > div {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+nav.opened ul:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 85%;
+  bottom: -0.5rem;
+  background: hsl(257, 7%, 63%);
+}
+nav.opened > div {
+  display: flex;
+}
+nav.opened .nav-link {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-right: 0;
+  color: white;
+  font-weight: 500;
+}
+nav.opened .btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* hamburger icon */
+.menu-hamburger__line {
+  background-color: hsl(230, 29%, 20%);
+  transition: all 0.6s ease-out;
+  @apply block m-1 h-1 w-8;
+}
+.open .line--2 {
+  transform: translateX(-45px);
+  opacity: 0;
+}
+.open .line--1 {
+  transform: translate(0, 6px) rotate(45deg);
+}
+.open .line--3 {
+  transform: translate(0, -10px) rotate(-45deg);
 }
