@@ -614,6 +614,45 @@ video {
   }
 }
 
+.footer-link {
+  --text-opacity: 1;
+  color: hsl(257, 7%, 63%);
+  color: rgba(157.78805000000003, 154.04550000000003, 167.25449999999998, var(--text-opacity));
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover {
+  --text-opacity: 1;
+  color: #e9d8fd;
+  color: rgba(233, 216, 253, var(--text-opacity));
+}
+
+.footer-sociallink {
+  margin-right: 1rem;
+}
+
+.footer-svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-svg:hover {
+  --text-opacity: 1;
+  color: hsl(180, 66%, 49%);
+  color: rgba(42.48299999999999, 207.41699999999994, 207.417, var(--text-opacity));
+}
+
 .space-y-0 > :not(template) ~ :not(template){
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -14591,7 +14630,7 @@ body {
   }
 
   .card:nth-child(1) {
-    grid-row: 1 / span 4;
+    grid-row: 1 / span 5;
   }
 
   .card:nth-child(2) {

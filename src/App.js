@@ -3,6 +3,7 @@ import FormInput from './components/FormInput';
 import HeroSection from './components/HeroSection';
 import StatisticsSection from './components/StatisticsSection';
 import BoostSection from './components/BoostSection';
+import Footer from './components/Footer';
 
 import './styles/app.css';
 
@@ -25,6 +26,7 @@ function App() {
       <FormInput />
       <StatisticsSection />
       <BoostSection />
+      <Footer />
     </>
   );
 }
