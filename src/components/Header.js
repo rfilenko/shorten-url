@@ -32,13 +32,13 @@ const Header = () => {
         <nav className="hidden items-center md:flex ml-8 w-full">
           <ul className="flex">
             <li className="nav-link">
-              <a href="#">Features</a>
+              <a href="/">Features</a>
             </li>
             <li className="nav-link">
-              <a href="#">Resources</a>
+              <a href="/">Resources</a>
             </li>
             <li className="nav-link">
-              <a href="#">Prices</a>
+              <a href="/">Prices</a>
             </li>
           </ul>
           <div className="ml-auto hidden md:flex flex-grow-0 items-center">
@@ -51,7 +51,7 @@ const Header = () => {
           </div>
         </nav>
       </header>
-    </> 
+    </>
   );
 };
 

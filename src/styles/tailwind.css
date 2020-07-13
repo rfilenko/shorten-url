@@ -57,17 +57,16 @@
 
 /* custom css */
 body {
-  font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
-
-.hero-section {
-  background: url(../images/illustration-working.svg);
-  background-repeat: no-repeat;
-  background-size: 45%;
-  background-position: 115% center;
+@media screen and (min-width: 64em) {
+  .hero-section {
+    background: url(../images/illustration-working.svg);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: 115% center;
+  }
 }
-
 .form-input form {
   background-image: url(../images/bg-shorten-mobile.svg);
   background-repeat: no-repeat;

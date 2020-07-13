@@ -22,13 +22,13 @@ const Footer = () => {
               <h4 className="mb-4 text-base">Features</h4>
               <ul>
                 <li className="footer-link">
-                  <a href="#">Link Shortening</a>
+                  <a href="/">Link Shortening</a>
                 </li>
                 <li className="footer-link">
-                  <a href="#">Branded Links</a>
+                  <a href="/">Branded Links</a>
                 </li>
                 <li className="footer-link">
-                  <a href="#">Analytics</a>
+                  <a href="/">Analytics</a>
                 </li>
               </ul>
             </div>
@@ -36,13 +36,13 @@ const Footer = () => {
               <h4 className="mb-4 text-base">Resources</h4>
               <ul>
                 <li className="footer-link">
-                  <a href="#">Blog</a>
+                  <a href="/">Blog</a>
                 </li>
                 <li className="footer-link">
-                  <a href="#">Developers</a>
+                  <a href="/">Developers</a>
                 </li>
                 <li className="footer-link">
-                  <a href="#">Support</a>
+                  <a href="/">Support</a>
                 </li>
               </ul>
             </div>
@@ -50,16 +50,16 @@ const Footer = () => {
               <h4 className="mb-4 text-base">Company</h4>
               <ul>
                 <li className="footer-link">
-                  <a href="#">About</a>
+                  <a href="/">About</a>
                 </li>
                 <li className="footer-link">
-                  <a href="#">Our Team</a>
+                  <a href="/">Our Team</a>
                 </li>
                 <li className="footer-link">
-                  <a href="#">Careers</a>
+                  <a href="/">Careers</a>
                 </li>
                 <li className="footer-link">
-                  <a href="#">Contact</a>
+                  <a href="/">Contact</a>
                 </li>
               </ul>
             </div>
@@ -67,7 +67,7 @@ const Footer = () => {
           <div className="lg:w-3/12 mb-6 md:mb-0">
             <ul className="flex justify-center md:justify-end">
               <li className="footer-sociallink">
-                <a href="#">
+                <a href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="footer-svg"
@@ -77,7 +77,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer-sociallink">
-                <a href="#">
+                <a href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="footer-svg"
@@ -87,7 +87,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer-sociallink">
-                <a href="#">
+                <a href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="footer-svg"
@@ -97,7 +97,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer-sociallink">
-                <a href="#">
+                <a href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="footer-svg"

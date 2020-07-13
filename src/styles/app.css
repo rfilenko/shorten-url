@@ -6202,6 +6202,10 @@ video {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-poppins{
+  font-family: Poppins;
+}
+
 .font-hairline{
   font-weight: 100;
 }
@@ -14670,15 +14674,16 @@ video {
 /* custom css */
 
 body {
-  font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
 
-.hero-section {
-  background: url(../images/illustration-working.svg);
-  background-repeat: no-repeat;
-  background-size: 45%;
-  background-position: 115% center;
+@media screen and (min-width: 64em) {
+  .hero-section {
+    background: url(../images/illustration-working.svg);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: 115% center;
+  }
 }
 
 .form-input form {
@@ -20298,6 +20303,10 @@ nav.opened .btn {
 
   .sm\:font-mono{
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-poppins{
+    font-family: Poppins;
   }
 
   .sm\:font-hairline{
@@ -34233,6 +34242,10 @@ nav.opened .btn {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-poppins{
+    font-family: Poppins;
+  }
+
   .md\:font-hairline{
     font-weight: 100;
   }
@@ -48164,6 +48177,10 @@ nav.opened .btn {
 
   .lg\:font-mono{
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .lg\:font-poppins{
+    font-family: Poppins;
   }
 
   .lg\:font-hairline{
@@ -62099,6 +62116,10 @@ nav.opened .btn {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .dt\:font-poppins{
+    font-family: Poppins;
+  }
+
   .dt\:font-hairline{
     font-weight: 100;
   }
@@ -76030,6 +76051,10 @@ nav.opened .btn {
 
   .xl\:font-mono{
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-poppins{
+    font-family: Poppins;
   }
 
   .xl\:font-hairline{

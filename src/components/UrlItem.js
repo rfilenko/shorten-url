@@ -18,7 +18,7 @@ const UrlItem = ({ result }) => {
         <button
           onClick={handleCopy}
           className={`btn mt-4 md:mt-0 md:ml-4 rounded py-2 px-6 ${
-            copyText == 'Copied!' ? 'active' : ''
+            copyText === 'Copied!' ? 'active' : ''
           }`}
         >
           {copyText}
