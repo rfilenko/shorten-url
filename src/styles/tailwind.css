@@ -17,13 +17,21 @@
   outline-width: 2px;
   outline-offset: 2px;
 }
+.active,
+.active:active {
+  @apply bg-purple-700;
+}
+.active:hover {
+  @apply bg-purple-900 shadow-md;
+}
 .nav-link {
   @apply text-purple-400 text-sm mr-6 transition duration-300 ease-in-out;
 }
 .nav-link:hover {
   @apply text-purple-600;
 }
-.nav-link:focus {
+.nav-link:focus,
+.active:focus {
   outline-style: dashed;
   outline-color: hsl(255, 11%, 22%);
   outline-width: 2px;

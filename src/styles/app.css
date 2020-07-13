@@ -657,6 +657,20 @@ video {
   outline-offset: 2px;
 }
 
+.active,
+.active:active {
+  --bg-opacity: 1;
+  background-color: hsl(257, 27%, 26%);
+  background-color: rgba(58.54290000000002, 48.39900000000001, 84.201, var(--bg-opacity));
+}
+
+.active:hover {
+  --bg-opacity: 1;
+  background-color: #44337a;
+  background-color: rgba(68, 51, 122, var(--bg-opacity));
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
 .nav-link {
   --text-opacity: 1;
   color: hsl(257, 7%, 63%);
@@ -674,7 +688,8 @@ video {
   color: rgba(53.0145, 49.928999999999995, 62.27100000000001, var(--text-opacity));
 }
 
-.nav-link:focus {
+.nav-link:focus,
+.active:focus {
   outline-style: dashed;
   outline-color: hsl(255, 11%, 22%);
   outline-width: 2px;
