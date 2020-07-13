@@ -192,3 +192,7 @@ nav.opened .btn {
 .open .line--3 {
   transform: translate(0, -10px) rotate(-45deg);
 }
+
+.error-msg {
+  bottom: -1.5rem;
+}

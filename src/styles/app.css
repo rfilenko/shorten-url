@@ -7834,8 +7834,10 @@ video {
   object-fit: scale-down;
 }
 
-.object-bottom{
-  object-position: bottom;
+.object-bottom object-position{
+  0: 0;
+  auto: auto;
+  -4: -2.5rem;
 }
 
 .object-center{
@@ -14825,6 +14827,10 @@ nav.opened .btn {
 
 .open .line--3 {
   transform: translate(0, -10px) rotate(-45deg);
+}
+
+.error-msg {
+  bottom: -1.5rem;
 }
 
 @media (min-width: 640px){
@@ -21926,8 +21932,10 @@ nav.opened .btn {
     object-fit: scale-down;
   }
 
-  .sm\:object-bottom{
-    object-position: bottom;
+  .sm\:object-bottom object-position{
+    0: 0;
+    auto: auto;
+    -4: -2.5rem;
   }
 
   .sm\:object-center{
@@ -35857,8 +35865,10 @@ nav.opened .btn {
     object-fit: scale-down;
   }
 
-  .md\:object-bottom{
-    object-position: bottom;
+  .md\:object-bottom object-position{
+    0: 0;
+    auto: auto;
+    -4: -2.5rem;
   }
 
   .md\:object-center{
@@ -49788,8 +49798,10 @@ nav.opened .btn {
     object-fit: scale-down;
   }
 
-  .lg\:object-bottom{
-    object-position: bottom;
+  .lg\:object-bottom object-position{
+    0: 0;
+    auto: auto;
+    -4: -2.5rem;
   }
 
   .lg\:object-center{
@@ -63719,8 +63731,10 @@ nav.opened .btn {
     object-fit: scale-down;
   }
 
-  .dt\:object-bottom{
-    object-position: bottom;
+  .dt\:object-bottom object-position{
+    0: 0;
+    auto: auto;
+    -4: -2.5rem;
   }
 
   .dt\:object-center{
@@ -77650,8 +77664,10 @@ nav.opened .btn {
     object-fit: scale-down;
   }
 
-  .xl\:object-bottom{
-    object-position: bottom;
+  .xl\:object-bottom object-position{
+    0: 0;
+    auto: auto;
+    -4: -2.5rem;
   }
 
   .xl\:object-center{

@@ -42,14 +42,22 @@ const FormInput = () => {
             className="w-full px-10 py-12 text-sm bg-purple-600 bg-center
             bg-cover rounded-lg lg:flex lg:justify-between lg:items-center"
           >
-            <input
-              type="text"
-              placeholder="Shorten a link here"
-              value={query}
-              onChange={(e) => changeHandler(e)}
-              className="w-full p-3 mb-8 border border-gray-300 rounded-md h-14 lg:mb-0"
-            />
-            <button className="w-full px-4 lg:px-8 py-3 text-xl font-bold text-white transition duration-300 ease-in-out bg-teal-400 rounded-md md:w-1/4 h-14 lg:px-5 lg:ml-4 hover:bg-teal-600">
+            <div className="w-full relative flex flex-col">
+              <input
+                type="text"
+                placeholder="Shorten a link here..."
+                value={query}
+                onChange={(e) => changeHandler(e)}
+                className={`w-full p-3 mb-8 border-2 rounded-md h-14 lg:mb-0 
+                ${error ? 'border-red-500' : 'border-gray-300'}`}
+              />
+              {error && (
+                <p className="absolute text-red-500 error-msg">
+                  Please add a link
+                </p>
+              )}
+            </div>
+            <button className="px-4 lg:px-8 py-3 text-xl font-bold text-white transition duration-300 ease-in-out bg-teal-400 rounded-md md:w-1/4 h-14 lg:px-5 lg:ml-4 hover:bg-teal-600">
               Shorten It!
             </button>
           </form>
