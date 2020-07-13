@@ -358,7 +358,11 @@ module.exports = {
       full: '100%',
     },
     objectPosition: {
-      bottom: 'bottom',
+      bottom: {
+        '0': '0',
+        auto: 'auto',
+        '-4': '-2.5rem',
+      },
       center: 'center',
       left: 'left',
       'left-bottom': 'left bottom',
