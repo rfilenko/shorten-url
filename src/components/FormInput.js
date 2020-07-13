@@ -39,16 +39,16 @@ const FormInput = () => {
         <div className="container py-4 mx-auto max-w-screen-dt">
           <form
             onSubmit={(e) => formHandler(e)}
-            className="w-full px-10 py-12 text-sm bg-purple-600 bg-center
+            className="w-full px-5 lg:px-10 py-6 lg:py-12 text-sm bg-purple-600 bg-center
             bg-cover rounded-lg lg:flex lg:justify-between lg:items-center"
           >
-            <div className="w-full relative flex flex-col">
+            <div className="w-full relative flex flex-col mb-8 lg:mb-0 ">
               <input
                 type="text"
                 placeholder="Shorten a link here..."
                 value={query}
                 onChange={(e) => changeHandler(e)}
-                className={`w-full p-3 mb-8 border-2 rounded-md h-14 lg:mb-0 
+                className={`w-full p-3 border-2 rounded-md h-14 
                 ${error ? 'border-red-500' : 'border-gray-300'}`}
               />
               {error && (
@@ -57,7 +57,7 @@ const FormInput = () => {
                 </p>
               )}
             </div>
-            <button className="px-4 lg:px-8 py-3 text-xl font-bold text-white transition duration-300 ease-in-out bg-teal-400 rounded-md md:w-1/4 h-14 lg:px-5 lg:ml-4 hover:bg-teal-600">
+            <button className="px-4 lg:px-8 py-3 text-xl font-bold text-white transition duration-300 ease-in-out bg-teal-400 rounded-md w-full md:w-1/4 h-14 lg:px-5 lg:ml-4 hover:bg-teal-600">
               Shorten It!
             </button>
           </form>
