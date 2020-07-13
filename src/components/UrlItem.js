@@ -11,7 +11,7 @@ const UrlItem = ({ result }) => {
   return (
     <div className="bg-white border flex flex-wrap items-center justify-between my-4 p-4 rounded text-sm">
       <p className="mb-4 md:mb-0 truncate border-bottom-2">{original}</p>
-      <hr className="bg-gray-100 block mb-2 mb-4 w-full md:hidden border-separate" />
+      <hr className="bg-gray-100 block mb-4 w-full md:hidden border-separate" />
       <span className="w-full text-teal-400 flex flex-col md:flex-row md:items-center">
         {shortened}
 

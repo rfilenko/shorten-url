@@ -57,7 +57,7 @@ const FormInput = () => {
                 </p>
               )}
             </div>
-            <button className="px-4 lg:px-8 py-3 text-xl font-bold text-white transition duration-300 ease-in-out bg-teal-400 rounded-md w-full md:w-1/4 h-14 lg:px-5 lg:ml-4 hover:bg-teal-600">
+            <button className="px-4 py-3 text-xl font-bold text-white transition duration-300 ease-in-out bg-teal-400 rounded-md w-full md:w-1/4 h-14 lg:px-5 lg:ml-4 hover:bg-teal-600">
               Shorten It!
             </button>
           </form>
